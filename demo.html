@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+    /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E4f4ff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #16558f;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #2171d5;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom right, #BBE3FF, #E4f4ff);
+}
+
+.hero h1 {
+    color: #16558f;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero p {
+    color: #2171d5;
+    font-size: 1.2em;
+}
+
+.search-bar {
+    margin-top: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 60%;
+    max-width: 400px;
+    border: 2px solid #16558f;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #2171d5;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #16558f;
+}
+
+.featured-jobs {
+    padding: 50px 20px;
+}
+
+.featured-jobs h2 {
+    color: #16558f;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.job-listings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.job-card {
+    background-color: #E4f4ff;
+    border: 2px solid #BBE3FF;
+    padding: 20px;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.job-card h3 {
+    color: #2171d5;
+    margin: 0 0 10px;
+}
+
+.how-it-works {
+    padding: 50px 20px;
+    background-color: #BBE3FF;
+}
+
+.how-it-works h2 {
+    color: #16558f;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.step {
+    background-color: #E4f4ff;
+    border: 2px solid #BBE3FF;
+    padding: 20px;
+    border-radius: 5px;
+    width: 250px;
+    text-align: center;
+}
+
+.step h3 {
+    color: #2171d5;
+    margin: 0 0 10px;
+}
+
+.testimonials {
+    padding: 50px 20px;
+    background-color: #E4f4ff;
+}
+
+.testimonials h2 {
+    color: #16558f;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    background-color: #BBE3FF;
+    border: 2px solid #E4f4ff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 250px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.testimonial p {
+    color: #16558f;
+    margin: 0;
+}
+
+footer {
+    padding: 20px;
+    background-color: #16558f;
+    color: #E4f4ff;
+    text-align: center;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #E4f4ff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">Job Portal</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="#">Employers</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Find Your Dream Job Today</h1>
+        <p>Connecting job seekers with top employers</p>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for jobs...">
+            <button>Get Started</button>
+        </div>
+    </section>
+
+    <section class="featured-jobs">
+        <h2>Featured Jobs</h2>
+        <div class="job-listings">
+            <div class="job-card">
+                <h3>Software Engineer</h3>
+                <p>Company: Tech Solutions</p>
+                <p>Location: New York, NY</p>
+                <p>Brief description of the job...</p>
+            </div>
+            <div class="job-card">
+                <h3>Marketing Manager</h3>
+                <p>Company: Creative Agency</p>
+                <p>Location: San Francisco, CA</p>
+                <p>Brief description of the job...</p>
+            </div>
+            <!-- Add more job cards as needed -->
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <h3>1. Create an Account</h3>
+                <p>Sign up and create your profile</p>
+            </div>
+            <div class="step">
+                <h3>2. Upload Resume</h3>
+                <p>Upload your resume and get noticed</p>
+            </div>
+            <div class="step">
+                <h3>3. Search for Jobs</h3>
+                <p>Find jobs that match your skills</p>
+            </div>
+            <div class="step">
+                <h3>4. Apply</h3>
+                <p>Submit applications with a click</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial">
+            <p>"This portal helped me find my dream job!"</p>
+            <p>- John Doe</p>
+        </div>
+        <div class="testimonial">
+            <p>"Excellent platform for job seekers!"</p>
+            <p>- Jane Smith</p>
+        </div>
+        <!-- Add more testimonials as needed -->
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="contact-info">
+            <p>Email: info@jobportal.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+</body>
+</html>
